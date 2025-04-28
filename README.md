@@ -25,13 +25,17 @@ In a real production application we would not use these keys, typically, in a br
 3.  Navigate to the [API section](https://www.themoviedb.org/settings/api).
 4.  Click on the "Create" button to generate a new API key.
 5.  Fill out the required information and agree to the terms of use.
-6.  Once your application is approved, you will receive an API key.
-7.  Copy the API key and keep it secure. You will need it to make requests to the TMDB API.
-8.  Make sure to keep your API key private and do not expose it in your client-side code ☝️.
+    - For the App Name, you can put anything like, "TMDB Class Homework"
+    - For the URL, you can put, 'http://localhost'.
+    - For the Description just explain that it's an homework assignment for, "Southwester Illinois College course."
+    - For the type of app, it's a, 'website.'
+7.  Once your application is approved, you will receive an API key.
+8.  Copy the API key and keep it secure. You will need it to make requests to the TMDB API.
+9.  Make sure to keep your API key private and do not expose it in your client-side code ☝️.
 
 ### Setting up your `.env.local` file
 
-1.  Create a `.env.local` file in the root of your project.
+1.  Create a `.env.local` file in the root of your project. You can use the VS Code GUI, but it's a bit confusing. I recommend that you do it from the CLI from the root of the cloned project: `touch .env.local`.
 2.  Add the following environment variables, replacing `YOUR_API_KEY` with your actual TMDB API key:
 
     ```
@@ -43,3 +47,5 @@ In a real production application we would not use these keys, typically, in a br
     **Important:** The `VITE_API_KEY` must include the `Bearer` prefix followed by your API key.
 
     **Security Note:** For this project, the API key is stored in the `.env.local` file. **Do not commit this file to version control** in a real-world application. Use a more secure method for storing and accessing your API key in production.
+
+T
