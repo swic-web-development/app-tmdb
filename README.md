@@ -2,6 +2,8 @@
 
 This project utilizes the TMDB (The Movie Database) API v3 to fetch and display movie data.
 
+As usual, don't clone this into an existing repo. Don't forget to run `npm i` from the repo directory (`cd` into it` after you clone and then...👇🏾.
+
 ## Getting Started with the TMDB API
 
 To use the TMDB API, you'll need to register for an API key on the TMDB website. [Here's a video overview.](https://somup.com/cTft08sPDv)
