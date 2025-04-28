@@ -25,7 +25,17 @@ export async function fetchMovies() {
   store.setState({ isLoading: true, error: null })
 
   try {
-    const response = await fetch(`${import.meta.env.VITE_API_URL}/trending/movie/week`, options)
+    const response = await fetch(
+      /**
+       * Following the TMDB API documentation,
+       * we are using the `/trending/movie/week` endpoint.
+       *
+       * https://developer.themoviedb.org/reference/discover-movie
+       */
+      `${import.meta.env.VITE_API_URL}/trending/movie/week`,
+      options,
+    )
+
     const data = await response.json()
 
     // Check for API-specific error responses
